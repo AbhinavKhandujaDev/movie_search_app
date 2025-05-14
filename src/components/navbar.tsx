@@ -13,12 +13,14 @@ const Navbar = ({
       <div className="lg:absolute sm:block">
         <BackButton />
       </div>
-      {label && (
-        <label className="flex-1 text-center font-bold  text-[1.5em]">
-          {label}
-        </label>
-      )}
-      <div className="w-full flex justify-center lg:px-72">{children}</div>
+      <div className="w-full flex justify-center lg:px-72">
+        {label && (
+          <label className="flex-1 text-center font-bold text-[1.5em]">
+            {label}
+          </label>
+        )}
+        {children}
+      </div>
     </nav>
   );
 };

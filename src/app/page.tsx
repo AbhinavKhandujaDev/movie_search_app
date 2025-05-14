@@ -1,7 +1,7 @@
 import Search from "@/components/search";
 import { Button } from "@/components/ui/button";
 import { navigateToResults } from "@/server-actions/movie";
-import { FilmIcon } from "lucide-react";
+import { FilmIcon, HeartIcon } from "lucide-react";
 import Link from "next/link";
 
 export default async function Home() {
@@ -24,7 +24,10 @@ export default async function Home() {
         />
         <div className="flex justify-center mt-8">
           <Link href="/favourites">
-            <Button variant="outline">View Favorites</Button>
+            <Button variant="outline">
+              <HeartIcon className="text-red-700 fill-current" />
+              View Favorites
+            </Button>
           </Link>
         </div>
       </div>

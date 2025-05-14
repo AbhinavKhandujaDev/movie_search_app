@@ -12,7 +12,7 @@ export default async function Results({ params }: { params: Promise<any> }) {
           className="h-[45px] rounded-s-[inherit] flex-1"
           required
           onAction={navigateToResults}
-          defaultValue={query}
+          defaultValue={decodeURIComponent(query)}
         />
       </Navbar>
       <PaginatedList query={query} />

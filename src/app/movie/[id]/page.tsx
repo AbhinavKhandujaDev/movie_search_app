@@ -12,7 +12,7 @@ const Movie = async ({ params }: { params: Promise<any> }) => {
 
   return (
     <div className="w-full h-screen flex flex-col items-center justify-center">
-      <Navbar />
+      <Navbar label={data?.Title} />
       <div className="flex-1 w-full grid place-items-center px-4">
         <MovieCard type={CARD_TYPES.DETAIL_ITEM} data={data} />
       </div>
